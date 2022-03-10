@@ -12,8 +12,9 @@ contract NFT is ERC721 {
     ) ERC721(name, symbol) {
     
     }
-    
-    function mint(address _to, uint _tokenId) external {
-        _mint(_to, _tokenId);
+
+
+    function mint(address _toAddr, uint _tokenId) external {
+        _mint(_toAddr, _tokenId);
     }
 }
