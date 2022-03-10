@@ -48,7 +48,7 @@ contract MerchNStaking is Ownable {
     ) {
         admin = msg.sender;
 
-        require(_stakeToken != address(0), "MerchNStaking: stake token address is 0");
+        require(_stakeToken != address(0), "MerchNStaking: staking token address is 0");
         stakeToken = _stakeToken;
         nft = NFT(_nftAddress);
     }
